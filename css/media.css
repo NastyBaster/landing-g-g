@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  ul {
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  #hero {
+    min-height: 60vh;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 75%;
+    /* box-sizing: border-box; */
+  }
+
+  .members-container {
+    flex-direction: column; /* Перебудовуємо в один стовпчик */
+    align-items: center; /* Центруємо картки на екрані смартфона */
+    gap: 20px; /* Трохи зменшуємо відстань */
+  }
+
+  .member-card {
+    max-width: 100%; /* На мобільних картка може розтягнутися */
+    width: 280px; /* Але тримаємо комфортну для ока ширину */
+  }
+}

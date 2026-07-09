@@ -1,0 +1,43 @@
+@import "variables.css";
+@import "style.css";
+@import "media.css";
+@import "schedule.css";
+@import "members.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--section-padding-mobile);
+  }
+}
+
+#hero,
+#members,
+#contacts {
+  background-color: var(--bg-main);
+}
+
+#schedule,
+#history {
+  background-color: var(--bg-section-alt);
+}

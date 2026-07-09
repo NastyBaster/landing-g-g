@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G & G</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#hero" class="logo">G & G</a>
+
+        <ul>
+          <li><a href="">Про гурт</a></li>
+          <li><a href="">Концерти</a></li>
+          <li><a href="">Галерея</a></li>
+          <li><a href="">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Гурт «Грим та Грім»</h1>
+        <p class="hero-subtitle">
+          Справжній український рок, який гуркоче в серці.
+        </p>
+
+        <p class="hero-description">
+          «Грим та Грім» — це поєднання потужних гітарних рифів, чесних текстів
+          і вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук,
+          свободу та силу музики.
+        </p>
+        <p class="hero-description">
+          Наші концерти - це завжди контакт з залом, драйв і емоції. Приєднуйся
+          до нас на найближчих виступах і відчуй цей саунд наживо!
+        </p>
+        <a href="#schedule" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
+      </div>
+    </section>
+    <section id="schedule">
+      <h2 class="section-title">Найближчі концерти</h2>
+
+      <div class="schedule-container">
+        <div class="schedule-header">
+          <div>Місто / Заклад</div>
+          <div>К-сть місць</div>
+          <div>Дата і час</div>
+          <div></div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="schedule-cell city">Київ — Docker-G Pub</div>
+          <div class="schedule-cell seats" data-label="К-сть місць">250</div>
+          <div class="schedule-cell date" data-label="Дата і час">
+            25.10.2026, 19:00
+          </div>
+          <div class="schedule-cell action">
+            <a href="#" class="btn-ticket">Замовити квиток</a>
+          </div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="schedule-cell city">Львів — !FESTrepublic</div>
+          <div class="schedule-cell seats" data-label="К-сть місць">400</div>
+          <div class="schedule-cell date" data-label="Дата і час">
+            01.11.2026, 20:00
+          </div>
+          <div class="schedule-cell action">
+            <a href="#" class="btn-ticket">Замовити квиток</a>
+          </div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="schedule-cell city">Одеса — Зелений театр</div>
+          <div class="schedule-cell seats" data-label="К-сть місць">700</div>
+          <div class="schedule-cell date" data-label="Дата і час">
+            09.11.2026, 19:30
+          </div>
+          <div class="schedule-cell action">
+            <a href="#" class="btn-ticket">Замовити квиток</a>
+          </div>
+        </div>
+
+        <div class="schedule-row">
+          <div class="schedule-cell city">Харків — ArtZavod</div>
+          <div class="schedule-cell seats" data-label="К-сть місць">500</div>
+          <div class="schedule-cell date" data-label="Дата і час">
+            16.11.2026, 19:00
+          </div>
+          <div class="schedule-cell action">
+            <a href="#" class="btn-ticket">Замовити квиток</a>
+          </div>
+        </div>
+      </div>
+<section id="members">
+  <h2 class="section-title">Учасники гурту</h2>
+
+  <div class="members-container">
+    <input type="radio" id="close-all" name="member-group" hidden checked />
+    
+    <input type="radio" id="toggle-member-1" name="member-group" class="member-toggle" hidden />
+    <label for="toggle-member-1" class="member-card">
+      <figure>
+        <label for="close-all" class="img-close-overlay"></label>
+        <div class="img-wrapper">
+          
+          <img src="img/member-1.jpeg" alt="Максим — гітара" class="member-img" />
+        </div>
+        <figcaption class="member-info">
+          <div class="member-header">
+            <h3>Максим — гітара</h3>
+            
+          </div>
+          <p class="expanded-text">
+            Максим грає на гітарі вже понад 10 років. Його вибухові
+            соло-партії та важкі рифи формують фірмовий драйвовий звук гурту
+            «Грим та Грім». Ендорсер відомих гітарних брендів.
+          </p>
+        </figcaption>
+      </figure>
+    </label>
+
+    <input type="radio" id="toggle-member-2" name="member-group" class="member-toggle" hidden />
+    <label for="toggle-member-2" class="member-card">
+      <figure>
+        <label for="close-all" class="img-close-overlay"></label>
+        <div class="img-wrapper">
+          
+          <img src="img/member-2.jpeg" alt="Олена — вокал" class="member-img" />
+        </div>
+        <figcaption class="member-info">
+          <div class="member-header">
+            <h3>Олена — вокал</h3>
+            
+          </div>
+          <p class="expanded-text">
+            Олена — голос і душа нашого колективу. Її сильний вокал здатний
+            заворожити тисячні зали, переходячи від ніжних етно-мотивів до
+            потужного рок-драйву.
+          </p>
+        </figcaption>
+      </figure>
+    </label>
+
+    <input type="radio" id="toggle-member-3" name="member-group" class="member-toggle" hidden />
+    <label for="toggle-member-3" class="member-card">
+      <figure>
+        <label for="close-all" class="img-close-overlay"></label>
+        <div class="img-wrapper">
+          
+          <img src="img/member-3.jpeg" alt="Тарас — барабани" class="member-img" />
+        </div>
+        <figcaption class="member-info">
+          <div class="member-header">
+            <h3>Тарас — барабани</h3>
+            
+          </div>
+          <p class="expanded-text">
+            Тарас відповідає за ритмічне серце гурту. Його шалена енергія за
+            барабанною установкою змушує рухатися кожного на наших
+            концертах.
+          </p>
+        </figcaption>
+      </figure>
+    </label>
+
+  </div>
+</section>
+    <section id="history"></section>
+    <section id="contacts"></section>
+    <footer></footer>
+  </body>
+</html>

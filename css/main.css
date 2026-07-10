@@ -4,6 +4,7 @@
 @import "schedule.css";
 @import "members.css";
 @import "history.css";
+@import "contacts.css";
 @import "media.css";
 
 * {
@@ -32,4 +33,3 @@ section {
     padding: var(--section-padding-mobile);
   }
 }
-

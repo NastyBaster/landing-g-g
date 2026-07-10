@@ -65,4 +65,12 @@
     width: 100%;
     margin: 0;
   }
+
+  .contacts-content {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
 }

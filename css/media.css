@@ -19,7 +19,6 @@
     min-height: 60vh;
     justify-content: center;
     text-align: center;
-    padding: 40px 20px;
   }
 
   .hero-content {
@@ -43,17 +42,27 @@
   .btn-primary {
     width: 100%;
     max-width: 75%;
-    /* box-sizing: border-box; */
+    transition: background var(--transition-speed) var(--transition-func);
   }
 
   .members-container {
-    flex-direction: column; /* Перебудовуємо в один стовпчик */
-    align-items: center; /* Центруємо картки на екрані смартфона */
-    gap: 20px; /* Трохи зменшуємо відстань */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .member-card {
-    max-width: 100%; /* На мобільних картка може розтягнутися */
-    width: 280px; /* Але тримаємо комфортну для ока ширину */
+    max-width: 100%;
+    width: 280px;
+  }
+
+  .member-card:hover {
+    transform: none;
+  }
+
+  .history-content img {
+    float: none;
+    width: 100%;
+    margin: 0;
   }
 }

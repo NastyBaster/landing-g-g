@@ -12,10 +12,10 @@
         <a href="#hero" class="logo">G & G</a>
 
         <ul>
-          <li><a href="">Про гурт</a></li>
-          <li><a href="">Концерти</a></li>
-          <li><a href="">Галерея</a></li>
-          <li><a href="">Контакти</a></li>
+          <li><a href="#hero">Про гурт</a></li>
+          <li><a href="#schedule">Концерти</a></li>
+          <li><a href="#members">Галерея</a></li>
+          <li><a href="#contacts">Контакти</a></li>
         </ul>
       </nav>
     </header>
@@ -93,81 +93,143 @@
           </div>
         </div>
       </div>
-<section id="members">
-  <h2 class="section-title">Учасники гурту</h2>
+    </section>
+    <section id="members">
+      <h2 class="section-title">Учасники гурту</h2>
 
-  <div class="members-container">
-    <input type="radio" id="close-all" name="member-group" hidden checked />
-    
-    <input type="radio" id="toggle-member-1" name="member-group" class="member-toggle" hidden />
-    <label for="toggle-member-1" class="member-card">
-      <figure>
-        <label for="close-all" class="img-close-overlay"></label>
-        <div class="img-wrapper">
-          
-          <img src="img/member-1.jpeg" alt="Максим — гітара" class="member-img" />
-        </div>
-        <figcaption class="member-info">
-          <div class="member-header">
-            <h3>Максим — гітара</h3>
-            
-          </div>
-          <p class="expanded-text">
-            Максим грає на гітарі вже понад 10 років. Його вибухові
-            соло-партії та важкі рифи формують фірмовий драйвовий звук гурту
-            «Грим та Грім». Ендорсер відомих гітарних брендів.
-          </p>
-        </figcaption>
-      </figure>
-    </label>
+      <div class="members-container">
+        <input type="radio" name="member" id="close-all" hidden checked />
 
-    <input type="radio" id="toggle-member-2" name="member-group" class="member-toggle" hidden />
-    <label for="toggle-member-2" class="member-card">
-      <figure>
-        <label for="close-all" class="img-close-overlay"></label>
-        <div class="img-wrapper">
-          
-          <img src="img/member-2.jpeg" alt="Олена — вокал" class="member-img" />
-        </div>
-        <figcaption class="member-info">
-          <div class="member-header">
-            <h3>Олена — вокал</h3>
-            
-          </div>
-          <p class="expanded-text">
-            Олена — голос і душа нашого колективу. Її сильний вокал здатний
-            заворожити тисячні зали, переходячи від ніжних етно-мотивів до
-            потужного рок-драйву.
-          </p>
-        </figcaption>
-      </figure>
-    </label>
+        <input
+          type="radio"
+          name="member"
+          id="member-1"
+          class="member-toggle"
+          hidden
+        />
 
-    <input type="radio" id="toggle-member-3" name="member-group" class="member-toggle" hidden />
-    <label for="toggle-member-3" class="member-card">
-      <figure>
-        <label for="close-all" class="img-close-overlay"></label>
-        <div class="img-wrapper">
-          
-          <img src="img/member-3.jpeg" alt="Тарас — барабани" class="member-img" />
-        </div>
-        <figcaption class="member-info">
-          <div class="member-header">
-            <h3>Тарас — барабани</h3>
-            
-          </div>
-          <p class="expanded-text">
-            Тарас відповідає за ритмічне серце гурту. Його шалена енергія за
-            барабанною установкою змушує рухатися кожного на наших
-            концертах.
-          </p>
-        </figcaption>
-      </figure>
-    </label>
+        <label class="member-card" for="member-1">
+          <figure>
+            <div class="img-wrapper">
+              <img
+                src="img/member-1.jpeg"
+                alt="Максим — гітара"
+                class="member-img"
+              />
+            </div>
 
-  </div>
-</section>
-    <section id="history"></section>
+            <figcaption class="member-info">
+              <p>Максим - гітара</p>
+
+              <p class="expanded-text">
+                Максим грає на гітарі вже понад 10 років. Його вибухові
+                соло-партії та важкі рифи формують фірмове звучання гурту.
+              </p>
+            </figcaption>
+          </figure>
+        </label>
+
+        <label class="modal-backdrop backdrop-1" for="close-all"></label>
+
+        <input
+          type="radio"
+          name="member"
+          id="member-2"
+          class="member-toggle"
+          hidden
+        />
+
+        <label class="member-card" for="member-2">
+          <figure>
+            <div class="img-wrapper">
+              <img
+                src="img/member-2.jpeg"
+                alt="Олена - вокал"
+                class="member-img"
+              />
+            </div>
+
+            <figcaption class="member-info">
+              <p>Олена - вокал</p>
+
+              <p class="expanded-text">
+                Олена - голос і душа колективу. Її вокал легко переходить від
+                ніжних етно-мотивів до потужного рокового драйву.
+              </p>
+            </figcaption>
+          </figure>
+        </label>
+
+        <label class="modal-backdrop backdrop-2" for="close-all"></label>
+
+        <input
+          type="radio"
+          name="member"
+          id="member-3"
+          class="member-toggle"
+          hidden
+        />
+
+        <label class="member-card" for="member-3">
+          <figure>
+            <div class="img-wrapper">
+              <img
+                src="img/member-3.jpeg"
+                alt="Тарас - барабани"
+                class="member-img"
+              />
+            </div>
+
+            <figcaption class="member-info">
+              <p>Тарас - барабани</p>
+
+              <p class="expanded-text">
+                Тарас відповідає за ритмічне серце гурту. Його енергія за
+                барабанною установкою заряджає кожен концерт.
+              </p>
+            </figcaption>
+          </figure>
+        </label>
+
+        <label class="modal-backdrop backdrop-3" for="close-all"></label>
+      </div>
+    </section>
+    <section id="history">
+      <h2 class="section-title">Наша історія</h2>
+
+      <div class="history-content">
+        <img src="../img/hero-bg.png" alt="Concert photo" />
+        <p>
+          "Грим та грім" народилися з бажання створювати музику, яка
+          відчувається серцем. Ми почали свій шлях у маленькій студії в центрі
+          Києва, де кожен акорд, кожне слово було наповнене емоціями та
+          переживаннями. Це було місце, де народжувались наші перші пісні, де ми
+          вчились грати разом як єдиний організм.
+        </p>
+        <br />
+        <p>
+          За роки нашої діяльності ми виступили на десятках сцен, від невеликих
+          клубів до великих фестивалів. Наша музика — це поєднання традиційного
+          року з сучасними елементами, що робить її унікальною та впізнаваною.
+          Ми не боїмось експериментувати зі звуком, додаючи електронні елементи
+          або народні інструменти.
+        </p>
+        <br />
+        <p>
+          Кожен наш виступ — це не просто концерт, а справжня подія, де ми
+          ділимося своєю енергією з глядачами та створюємо неповторну атмосферу.
+          Ми віримо, що музика має силу об'єднувати людей, створювати спільноти
+          та надихати на зміни.
+        </p>
+        <br />
+        <p>
+          Кожен наш виступ — це не просто концерт, а справжня подія, де ми
+          ділимося своєю енергією з глядачами та створюємо неповторну атмосферу.
+          Ми віримо, що музика має силу об'єднувати людей, створювати спільноти
+          та надихати на зміни.
+        </p>
+      </div>
+    </section>
     <section id="contacts"></section>
     <footer></footer>
   </body>

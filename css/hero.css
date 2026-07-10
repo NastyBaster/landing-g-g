@@ -1,60 +1,21 @@
-body {
-  background-color: #111111;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
-  padding: 16px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
-
 #hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url("/img/hero-bg.png");
+    url("../img/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 45vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 5%;
   box-sizing: border-box;
 }
 
 .hero-content {
   background: transparent;
+  width: 100%;
 }
 
 #hero h1 {
@@ -79,13 +40,13 @@ li a:hover {
 
 .btn-primary {
   display: inline-block;
-  background-color: #ffcc00;
-  color: #000000;
+  background-color: var(--color-accent);
+  color: var(--bg-main);
   text-decoration: none;
   font-weight: bold;
   padding: 14px 28px;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background var(--transition-speed) var(--transition-func);
 }
 
 .btn-primary:hover {

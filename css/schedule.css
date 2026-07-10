@@ -1,4 +1,3 @@
-
 #schedule {
   background-color: var(--bg-section-alt);
 }
@@ -14,7 +13,6 @@
   margin: 0 auto;
 }
 
-
 .schedule-header,
 .schedule-row {
   display: grid;
@@ -28,14 +26,13 @@
   color: var(--text-muted);
   font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid #2a2a35;
 }
 
 .schedule-row {
   background-color: var(--bg-card);
   margin-top: 15px;
   border-radius: 6px;
-  transition: transform 0.2s ease;
+  transition: transform var(--transition-speed) var(--transition-func);
 }
 
 .schedule-row:hover {
@@ -52,9 +49,9 @@
   font-size: 14px;
   font-weight: bold;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: transform var(--transition-speed) var(--transition-func);
 }
 
 .btn-ticket:hover {
-  background-color: #cd224c;
+  filter: brightness(0.9);
 }

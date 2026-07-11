@@ -80,13 +80,3 @@ button:hover {
   border: 0;
   border-radius: var(--radius-md);
 }
-
-input[type="number"] {
-  appearance: textfield;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}

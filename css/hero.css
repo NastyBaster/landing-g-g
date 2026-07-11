@@ -16,6 +16,8 @@
 .hero-content {
   background: transparent;
   width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
 #hero h1 {
@@ -45,10 +47,14 @@
   text-decoration: none;
   font-weight: bold;
   padding: 14px 28px;
-  border-radius: var(--radius-pill);
-  transition: background-color var(--transition-speed) var(--transition-func);
+  border-radius: var(--radius-cta);
+  box-shadow: 0 0 18px var(--color-accent-yellow-glow);
+  transition:
+    background-color var(--transition-speed) var(--transition-func),
+    box-shadow var(--transition-speed) var(--transition-func);
 }
 
 .btn-primary:hover {
   background-color: var(--color-accent-yellow-hover);
+  box-shadow: 0 0 24px var(--color-accent-yellow-glow);
 }

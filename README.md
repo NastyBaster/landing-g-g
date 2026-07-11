@@ -23,6 +23,7 @@ JavaScript у першому етапі реалізації не викорис
 ```text
 .
 ├── index.html
+├── tickets.html
 ├── css/
 │   ├── main.css
 │   ├── variables.css
@@ -33,6 +34,7 @@ JavaScript у першому етапі реалізації не викорис
 │   ├── history.css
 │   ├── contacts.css
 │   ├── footer.css
+│   ├── tickets.css
 │   └── media.css
 └── img/
     ├── hero-bg.png

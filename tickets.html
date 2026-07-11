@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Замовити квиток — G & G</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html#hero" class="logo">G & G</a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Відкрити або закрити меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul>
+          <li><a href="index.html#hero">Про гурт</a></li>
+          <li><a href="index.html#schedule">Концерти</a></li>
+          <li><a href="index.html#members">Галерея</a></li>
+          <li><a href="index.html#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="ticket-page">
+      <section class="ticket-card" aria-labelledby="ticket-title">
+        <p class="eyebrow">Оформлення замовлення</p>
+        <h1 id="ticket-title">Замовити квиток</h1>
+        <p class="ticket-intro">
+          Заповни коротку форму, і ми звʼяжемося з тобою для підтвердження
+          бронювання на найближчий концерт гурту «Грим та Грім».
+        </p>
+
+        <form class="ticket-form" action="index.html#contacts" method="post">
+          <div class="field">
+            <label for="ticket-name">Імʼя</label>
+            <input
+              id="ticket-name"
+              name="name"
+              type="text"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="ticket-email">Email</label>
+            <input id="ticket-email" name="email" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="ticket-city">Концерт</label>
+            <select id="ticket-city" name="concert" required>
+              <option value="">Обери місто</option>
+              <option value="kyiv">Київ — Docker-G Pub</option>
+              <option value="lviv">Львів — !FESTrepublic</option>
+              <option value="odesa">Одеса — Зелений театр</option>
+              <option value="kharkiv">Харків — ArtZavod</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="ticket-count">Кількість квитків</label>
+            <input
+              id="ticket-count"
+              name="tickets"
+              type="number"
+              min="1"
+              max="10"
+              value="1"
+              required
+            />
+          </div>
+
+          <div class="ticket-actions">
+            <button type="submit">Підтвердити замовлення</button>
+            <a href="index.html#schedule" class="btn-secondary">Назад до розкладу</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

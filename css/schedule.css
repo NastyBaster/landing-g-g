@@ -11,6 +11,10 @@
 .schedule-container {
   max-width: var(--container-width);
   margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-card);
 }
 
 .schedule-header,
@@ -29,14 +33,12 @@
 }
 
 .schedule-row {
-  background-color: var(--bg-card);
-  margin-top: 15px;
-  border-radius: var(--radius-sm);
-  transition: transform var(--transition-speed) var(--transition-func);
+  border-top: 1px solid var(--color-border);
+  transition: background-color var(--transition-speed) var(--transition-func);
 }
 
 .schedule-row:hover {
-  transform: translateY(-2px);
+  background-color: var(--color-bg-section);
 }
 
 .btn-ticket {

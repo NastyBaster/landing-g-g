@@ -10,6 +10,17 @@
     <header>
       <nav>
         <a href="#hero" class="logo">G & G</a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Відкрити або закрити меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
         <ul>
           <li><a href="#hero">Про гурт</a></li>
@@ -35,7 +46,7 @@
           Наші концерти - це завжди контакт з залом, драйв і емоції. Приєднуйся
           до нас на найближчих виступах і відчуй цей саунд наживо!
         </p>
-        <a href="#contacts" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
+        <a href="tickets.html" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
       </div>
     </section>
     <section id="schedule">
@@ -56,7 +67,7 @@
             25.10.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="#contacts" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -67,7 +78,7 @@
             01.11.2026, 20:00
           </div>
           <div class="schedule-cell action">
-            <a href="#contacts" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -78,7 +89,7 @@
             09.11.2026, 19:30
           </div>
           <div class="schedule-cell action">
-            <a href="#contacts" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -89,7 +100,7 @@
             16.11.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="#contacts" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
       </div>
@@ -98,14 +109,21 @@
       <h2 class="section-title">Учасники гурту</h2>
 
       <div class="members-container">
-        <input type="radio" name="member" id="close-all" hidden checked />
+        <input
+          type="radio"
+          name="member"
+          id="close-all"
+          class="member-toggle"
+          aria-label="Закрити картку учасника"
+          checked
+        />
 
         <input
           type="radio"
           name="member"
           id="member-1"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Максима"
         />
 
         <label class="member-card" for="member-1">
@@ -130,13 +148,14 @@
         </label>
 
         <label class="modal-backdrop backdrop-1" for="close-all"></label>
+        <label class="modal-close close-1" for="close-all">Закрити ×</label>
 
         <input
           type="radio"
           name="member"
           id="member-2"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Олени"
         />
 
         <label class="member-card" for="member-2">
@@ -161,13 +180,14 @@
         </label>
 
         <label class="modal-backdrop backdrop-2" for="close-all"></label>
+        <label class="modal-close close-2" for="close-all">Закрити ×</label>
 
         <input
           type="radio"
           name="member"
           id="member-3"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Тараса"
         />
 
         <label class="member-card" for="member-3">
@@ -192,6 +212,7 @@
         </label>
 
         <label class="modal-backdrop backdrop-3" for="close-all"></label>
+        <label class="modal-close close-3" for="close-all">Закрити ×</label>
       </div>
     </section>
     <section id="history">

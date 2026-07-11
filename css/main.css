@@ -6,6 +6,7 @@
 @import "history.css";
 @import "contacts.css";
 @import "footer.css";
+@import "tickets.css";
 @import "media.css";
 
 
@@ -17,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
@@ -28,6 +30,12 @@ body {
 
 section {
   padding: var(--section-padding);
+}
+
+.section-title {
+  max-width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {

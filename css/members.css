@@ -10,11 +10,26 @@
   position: relative;
 }
 
+.member-toggle {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .member-card {
   display: block;
   width: 100%;
   max-width: 300px;
   cursor: pointer;
+}
+
+.member-toggle:focus-visible + .member-card figure,
+.member-card:focus-visible figure {
+  outline: 2px solid var(--color-accent-yellow);
+  outline-offset: 4px;
 }
 
 .member-card figure {
@@ -94,6 +109,29 @@
   cursor: pointer;
 }
 
+.modal-close {
+  position: fixed;
+  top: calc(50% - 250px);
+  left: calc(50% + 110px);
+  z-index: 3;
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-accent-red);
+  color: var(--color-text-main);
+  border-radius: var(--radius-md);
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition:
+    opacity var(--transition-base),
+    visibility var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.modal-close:hover {
+  background: var(--color-accent-red-hover);
+}
+
 #member-1:checked + .member-card figure,
 #member-2:checked + .member-card figure,
 #member-3:checked + .member-card figure {
@@ -128,6 +166,13 @@
 #member-1:checked ~ .backdrop-1,
 #member-2:checked ~ .backdrop-2,
 #member-3:checked ~ .backdrop-3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+#member-1:checked ~ .close-1,
+#member-2:checked ~ .close-2,
+#member-3:checked ~ .close-3 {
   opacity: 1;
   visibility: visible;
 }

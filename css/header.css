@@ -1,18 +1,28 @@
+header {
+  background: var(--color-bg-main);
+}
+
 .logo {
   font-weight: bold;
   font-size: 24px;
   color: var(--text-main);
   text-decoration: none;
   padding: var(--space-sm) var(--space-md);
+  white-space: nowrap;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-width);
+  min-height: var(--header-height);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
-ul {
+header ul {
   display: flex;
   gap: var(--space-md);
   list-style: none;
@@ -20,7 +30,7 @@ ul {
   margin: 0;
 }
 
-li a {
+header li a {
   display: block;
   color: var(--text-main);
   text-align: center;
@@ -29,6 +39,16 @@ li a {
   transition: background-color var(--transition-base);
 }
 
-li a:hover {
+header li a:hover {
   background-color: var(--bg-section-alt);
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.burger {
+  display: none;
 }

@@ -24,6 +24,14 @@
       opacity var(--transition-base);
   }
 
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+  }
+
   header ul {
     position: fixed;
     top: 0;
@@ -45,6 +53,15 @@
   header li a {
     text-align: left;
     border-radius: var(--radius-md);
+  }
+
+  header li a label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-toggle:checked ~ .menu-overlay {
+    display: block;
   }
 
   .nav-toggle:checked ~ ul {

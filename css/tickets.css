@@ -51,45 +51,61 @@
   border-bottom: 1px solid currentColor;
 }
 
-.ticket-modals {
-  display: contents;
-}
-
 .ticket-modal {
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  z-index: 10;
   display: none;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-md);
+  place-items: center;
+  padding: var(--space-lg);
 }
 
 .ticket-modal:target {
-  display: flex;
+  display: grid;
 }
 
 .ticket-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10, 10, 12, 0.78);
+  background: rgba(0, 0, 0, 0.72);
   backdrop-filter: blur(4px);
 }
 
-.ticket-modal .ticket-card {
+.ticket-modal-card {
   position: relative;
   z-index: 1;
-  width: min(100%, 620px);
-  max-height: calc(100vh - 40px);
+  width: min(720px, 100%);
+  max-height: calc(100vh - (var(--space-lg) * 2));
   overflow-y: auto;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
 }
 
-.ticket-card h2 {
+.ticket-modal-card h2 {
   margin: var(--space-xs) 0 var(--space-md);
-  font-size: 32px;
+  font-size: 40px;
 }
 
-.success-page .ticket-card {
-  text-align: center;
+.ticket-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  color: var(--color-text-main);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+}
+
+.ticket-label {
+  font-weight: 700;
+}
+
+.ticket-concert {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }

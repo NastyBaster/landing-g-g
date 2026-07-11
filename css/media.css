@@ -184,3 +184,25 @@
     font-size: 32px;
   }
 }
+
+@media (max-width: 768px) {
+  .ticket-modal {
+    align-items: start;
+    padding: var(--space-md);
+    overflow-y: auto;
+  }
+
+  .ticket-modal-card {
+    max-height: none;
+    padding: var(--space-md);
+  }
+
+  .ticket-modal-card h2 {
+    font-size: 32px;
+  }
+
+  .ticket-close {
+    top: var(--space-sm);
+    right: var(--space-sm);
+  }
+}

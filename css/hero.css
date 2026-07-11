@@ -40,6 +40,12 @@
   margin-bottom: 30px;
 }
 
+.text-accent-blue {
+  color: var(--color-accent-blue);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(36, 200, 255, 0.22);
+}
+
 .btn-primary {
   display: inline-block;
   background-color: var(--color-accent);

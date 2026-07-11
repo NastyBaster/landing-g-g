@@ -38,12 +38,12 @@
         </p>
 
         <p class="hero-description">
-          «Грим та Грім» — це поєднання потужних гітарних рифів, чесних текстів
+          «Грим та Грім» — це поєднання <span class="text-accent-blue">потужних</span> гітарних рифів, чесних текстів
           і вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук,
           свободу та силу музики.
         </p>
         <p class="hero-description">
-          Наші концерти - це завжди контакт з залом, драйв і емоції. Приєднуйся
+          <span class="text-accent-blue">Наші концерти</span> - це завжди контакт з залом, драйв і емоції. Приєднуйся
           до нас на найближчих виступах і відчуй цей саунд наживо!
         </p>
         <a href="#schedule" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
@@ -323,7 +323,7 @@
       <p class="subtitle">Хочеш замовити виступ або маєш питання? Пиши!</p>
 
       <div class="contacts-content">
-        <form class="contact-form" action="#contacts" method="post">
+        <form class="contact-form" action="success.html" method="get">
           <div class="row">
             <div class="field">
               <label for="name">Ім'я</label>
@@ -362,6 +362,256 @@
         </div>
       </div>
     </section>
+
+    <div class="ticket-modals" aria-label="Форми замовлення квитків">
+      <section
+        id="ticket-kyiv"
+        class="ticket-modal"
+        aria-labelledby="ticket-kyiv-title"
+      >
+        <a
+          href="#schedule"
+          class="ticket-backdrop"
+          aria-label="Закрити форму"
+        ></a>
+        <div class="ticket-card" role="dialog" aria-modal="true">
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-kyiv-title">Київ — Docker-G Pub</h2>
+          <p class="ticket-intro">
+            25.10.2026, 19:00. Заповни форму, і ми звʼяжемося з тобою для
+            підтвердження бронювання.
+          </p>
+          <form class="ticket-form" action="success.html" method="get">
+            <input
+              type="hidden"
+              name="concert"
+              value="Київ — Docker-G Pub, 25.10.2026, 19:00"
+            />
+            <div class="field">
+              <label for="ticket-kyiv-name">Імʼя</label
+              ><input
+                id="ticket-kyiv-name"
+                name="name"
+                type="text"
+                minlength="2"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-kyiv-email">Email</label
+              ><input
+                id="ticket-kyiv-email"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-kyiv-count">Кількість квитків</label
+              ><input
+                id="ticket-kyiv-count"
+                name="tickets"
+                type="number"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </div>
+            <div class="ticket-actions">
+              <button type="submit">Підтвердити замовлення</button
+              ><a href="#schedule" class="btn-secondary">Закрити</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section
+        id="ticket-lviv"
+        class="ticket-modal"
+        aria-labelledby="ticket-lviv-title"
+      >
+        <a
+          href="#schedule"
+          class="ticket-backdrop"
+          aria-label="Закрити форму"
+        ></a>
+        <div class="ticket-card" role="dialog" aria-modal="true">
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-lviv-title">Львів — !FESTrepublic</h2>
+          <p class="ticket-intro">
+            01.11.2026, 20:00. Заповни форму, і ми звʼяжемося з тобою для
+            підтвердження бронювання.
+          </p>
+          <form class="ticket-form" action="success.html" method="get">
+            <input
+              type="hidden"
+              name="concert"
+              value="Львів — !FESTrepublic, 01.11.2026, 20:00"
+            />
+            <div class="field">
+              <label for="ticket-lviv-name">Імʼя</label
+              ><input
+                id="ticket-lviv-name"
+                name="name"
+                type="text"
+                minlength="2"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-lviv-email">Email</label
+              ><input
+                id="ticket-lviv-email"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-lviv-count">Кількість квитків</label
+              ><input
+                id="ticket-lviv-count"
+                name="tickets"
+                type="number"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </div>
+            <div class="ticket-actions">
+              <button type="submit">Підтвердити замовлення</button
+              ><a href="#schedule" class="btn-secondary">Закрити</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section
+        id="ticket-odesa"
+        class="ticket-modal"
+        aria-labelledby="ticket-odesa-title"
+      >
+        <a
+          href="#schedule"
+          class="ticket-backdrop"
+          aria-label="Закрити форму"
+        ></a>
+        <div class="ticket-card" role="dialog" aria-modal="true">
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-odesa-title">Одеса — Зелений театр</h2>
+          <p class="ticket-intro">
+            09.11.2026, 19:30. Заповни форму, і ми звʼяжемося з тобою для
+            підтвердження бронювання.
+          </p>
+          <form class="ticket-form" action="success.html" method="get">
+            <input
+              type="hidden"
+              name="concert"
+              value="Одеса — Зелений театр, 09.11.2026, 19:30"
+            />
+            <div class="field">
+              <label for="ticket-odesa-name">Імʼя</label
+              ><input
+                id="ticket-odesa-name"
+                name="name"
+                type="text"
+                minlength="2"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-odesa-email">Email</label
+              ><input
+                id="ticket-odesa-email"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-odesa-count">Кількість квитків</label
+              ><input
+                id="ticket-odesa-count"
+                name="tickets"
+                type="number"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </div>
+            <div class="ticket-actions">
+              <button type="submit">Підтвердити замовлення</button
+              ><a href="#schedule" class="btn-secondary">Закрити</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section
+        id="ticket-kharkiv"
+        class="ticket-modal"
+        aria-labelledby="ticket-kharkiv-title"
+      >
+        <a
+          href="#schedule"
+          class="ticket-backdrop"
+          aria-label="Закрити форму"
+        ></a>
+        <div class="ticket-card" role="dialog" aria-modal="true">
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-kharkiv-title">Харків — ArtZavod</h2>
+          <p class="ticket-intro">
+            16.11.2026, 19:00. Заповни форму, і ми звʼяжемося з тобою для
+            підтвердження бронювання.
+          </p>
+          <form class="ticket-form" action="success.html" method="get">
+            <input
+              type="hidden"
+              name="concert"
+              value="Харків — ArtZavod, 16.11.2026, 19:00"
+            />
+            <div class="field">
+              <label for="ticket-kharkiv-name">Імʼя</label
+              ><input
+                id="ticket-kharkiv-name"
+                name="name"
+                type="text"
+                minlength="2"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-kharkiv-email">Email</label
+              ><input
+                id="ticket-kharkiv-email"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ticket-kharkiv-count">Кількість квитків</label
+              ><input
+                id="ticket-kharkiv-count"
+                name="tickets"
+                type="number"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </div>
+            <div class="ticket-actions">
+              <button type="submit">Підтвердити замовлення</button
+              ><a href="#schedule" class="btn-secondary">Закрити</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
       <div class="footer-info">
         <p>&copy; 2025 «Грим та Грім». Всі права захищені.</p>

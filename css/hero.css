@@ -45,8 +45,8 @@
   text-decoration: none;
   font-weight: bold;
   padding: 14px 28px;
-  border-radius: 4px;
-  transition: background var(--transition-speed) var(--transition-func);
+  border-radius: 10px;
+  transition: background-color var(--transition-speed) var(--transition-func);
 }
 
 .btn-primary:hover {

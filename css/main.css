@@ -5,7 +5,9 @@
 @import "members.css";
 @import "history.css";
 @import "contacts.css";
+@import "footer.css";
 @import "media.css";
+
 
 * {
   margin: 0;

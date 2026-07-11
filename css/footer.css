@@ -1,0 +1,23 @@
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer p,
+.footer .footer-social a {
+  color: var(--text-muted);
+  margin: 20px 0;
+}
+
+.footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.footer-social a:not(:last-child)::after {
+  content: " · ";
+  color: #888;
+}

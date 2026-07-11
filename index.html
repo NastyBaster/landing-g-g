@@ -46,7 +46,7 @@
           Наші концерти - це завжди контакт з залом, драйв і емоції. Приєднуйся
           до нас на найближчих виступах і відчуй цей саунд наживо!
         </p>
-        <a href="tickets.html" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
+        <a href="#schedule" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
       </div>
     </section>
     <section id="schedule">
@@ -67,7 +67,7 @@
             25.10.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
+            <a href="#ticket-kyiv" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -78,7 +78,7 @@
             01.11.2026, 20:00
           </div>
           <div class="schedule-cell action">
-            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
+            <a href="#ticket-lviv" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -89,7 +89,7 @@
             09.11.2026, 19:30
           </div>
           <div class="schedule-cell action">
-            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
+            <a href="#ticket-odesa" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -100,11 +100,81 @@
             16.11.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
+            <a href="#ticket-kharkiv" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="ticket-modals" aria-live="polite">
+      <div id="ticket-kyiv" class="ticket-modal" role="dialog" aria-labelledby="ticket-kyiv-title" aria-modal="true">
+        <a href="#schedule" class="ticket-backdrop" aria-label="Закрити форму"></a>
+        <section class="ticket-card ticket-modal-card">
+          <a href="#schedule" class="ticket-close" aria-label="Закрити форму">×</a>
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-kyiv-title">Замовити квиток</h2>
+          <p class="ticket-intro">Заповни коротку форму, і ми звʼяжемося з тобою для підтвердження бронювання.</p>
+          <form class="ticket-form" action="#contacts" method="post">
+            <div class="field"><label for="ticket-kyiv-name">Імʼя</label><input id="ticket-kyiv-name" name="name" type="text" minlength="2" required /></div>
+            <div class="field"><label for="ticket-kyiv-email">Email</label><input id="ticket-kyiv-email" name="email" type="email" required /></div>
+            <div class="field"><span class="ticket-label">Концерт</span><p class="ticket-concert">Київ — Docker-G Pub</p><input type="hidden" name="concert" value="Київ — Docker-G Pub" /></div>
+            <div class="field"><label for="ticket-kyiv-count">Кількість квитків</label><input id="ticket-kyiv-count" name="tickets" type="number" min="1" max="10" value="1" required /></div>
+            <div class="ticket-actions"><button type="submit">Підтвердити замовлення</button><a href="#schedule" class="btn-secondary">Назад до розкладу</a></div>
+          </form>
+        </section>
+      </div>
+
+      <div id="ticket-lviv" class="ticket-modal" role="dialog" aria-labelledby="ticket-lviv-title" aria-modal="true">
+        <a href="#schedule" class="ticket-backdrop" aria-label="Закрити форму"></a>
+        <section class="ticket-card ticket-modal-card">
+          <a href="#schedule" class="ticket-close" aria-label="Закрити форму">×</a>
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-lviv-title">Замовити квиток</h2>
+          <p class="ticket-intro">Заповни коротку форму, і ми звʼяжемося з тобою для підтвердження бронювання.</p>
+          <form class="ticket-form" action="#contacts" method="post">
+            <div class="field"><label for="ticket-lviv-name">Імʼя</label><input id="ticket-lviv-name" name="name" type="text" minlength="2" required /></div>
+            <div class="field"><label for="ticket-lviv-email">Email</label><input id="ticket-lviv-email" name="email" type="email" required /></div>
+            <div class="field"><span class="ticket-label">Концерт</span><p class="ticket-concert">Львів — !FESTrepublic</p><input type="hidden" name="concert" value="Львів — !FESTrepublic" /></div>
+            <div class="field"><label for="ticket-lviv-count">Кількість квитків</label><input id="ticket-lviv-count" name="tickets" type="number" min="1" max="10" value="1" required /></div>
+            <div class="ticket-actions"><button type="submit">Підтвердити замовлення</button><a href="#schedule" class="btn-secondary">Назад до розкладу</a></div>
+          </form>
+        </section>
+      </div>
+
+      <div id="ticket-odesa" class="ticket-modal" role="dialog" aria-labelledby="ticket-odesa-title" aria-modal="true">
+        <a href="#schedule" class="ticket-backdrop" aria-label="Закрити форму"></a>
+        <section class="ticket-card ticket-modal-card">
+          <a href="#schedule" class="ticket-close" aria-label="Закрити форму">×</a>
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-odesa-title">Замовити квиток</h2>
+          <p class="ticket-intro">Заповни коротку форму, і ми звʼяжемося з тобою для підтвердження бронювання.</p>
+          <form class="ticket-form" action="#contacts" method="post">
+            <div class="field"><label for="ticket-odesa-name">Імʼя</label><input id="ticket-odesa-name" name="name" type="text" minlength="2" required /></div>
+            <div class="field"><label for="ticket-odesa-email">Email</label><input id="ticket-odesa-email" name="email" type="email" required /></div>
+            <div class="field"><span class="ticket-label">Концерт</span><p class="ticket-concert">Одеса — Зелений театр</p><input type="hidden" name="concert" value="Одеса — Зелений театр" /></div>
+            <div class="field"><label for="ticket-odesa-count">Кількість квитків</label><input id="ticket-odesa-count" name="tickets" type="number" min="1" max="10" value="1" required /></div>
+            <div class="ticket-actions"><button type="submit">Підтвердити замовлення</button><a href="#schedule" class="btn-secondary">Назад до розкладу</a></div>
+          </form>
+        </section>
+      </div>
+
+      <div id="ticket-kharkiv" class="ticket-modal" role="dialog" aria-labelledby="ticket-kharkiv-title" aria-modal="true">
+        <a href="#schedule" class="ticket-backdrop" aria-label="Закрити форму"></a>
+        <section class="ticket-card ticket-modal-card">
+          <a href="#schedule" class="ticket-close" aria-label="Закрити форму">×</a>
+          <p class="eyebrow">Оформлення замовлення</p>
+          <h2 id="ticket-kharkiv-title">Замовити квиток</h2>
+          <p class="ticket-intro">Заповни коротку форму, і ми звʼяжемося з тобою для підтвердження бронювання.</p>
+          <form class="ticket-form" action="#contacts" method="post">
+            <div class="field"><label for="ticket-kharkiv-name">Імʼя</label><input id="ticket-kharkiv-name" name="name" type="text" minlength="2" required /></div>
+            <div class="field"><label for="ticket-kharkiv-email">Email</label><input id="ticket-kharkiv-email" name="email" type="email" required /></div>
+            <div class="field"><span class="ticket-label">Концерт</span><p class="ticket-concert">Харків — ArtZavod</p><input type="hidden" name="concert" value="Харків — ArtZavod" /></div>
+            <div class="field"><label for="ticket-kharkiv-count">Кількість квитків</label><input id="ticket-kharkiv-count" name="tickets" type="number" min="1" max="10" value="1" required /></div>
+            <div class="ticket-actions"><button type="submit">Підтвердити замовлення</button><a href="#schedule" class="btn-secondary">Назад до розкладу</a></div>
+          </form>
+        </section>
+      </div>
+    </div>
     <section id="members">
       <h2 class="section-title">Учасники гурту</h2>
 

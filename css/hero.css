@@ -16,24 +16,26 @@
 .hero-content {
   background: transparent;
   width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
 #hero h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--color-text-main);
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
   font-size: 20px;
-  color: #e0e0e0;
+  color: var(--color-text-soft);
   margin-bottom: 15px;
 }
 
 .hero-description {
   font-size: 16px;
-  color: #b3b3b3;
+  color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -45,10 +47,14 @@
   text-decoration: none;
   font-weight: bold;
   padding: 14px 28px;
-  border-radius: 10px;
-  transition: background-color var(--transition-speed) var(--transition-func);
+  border-radius: var(--radius-cta);
+  box-shadow: 0 0 18px var(--color-accent-yellow-glow);
+  transition:
+    background-color var(--transition-speed) var(--transition-func),
+    box-shadow var(--transition-speed) var(--transition-func);
 }
 
 .btn-primary:hover {
-  background-color: #e6b800;
+  background-color: var(--color-accent-yellow-hover);
+  box-shadow: 0 0 24px var(--color-accent-yellow-glow);
 }

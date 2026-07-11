@@ -3,7 +3,7 @@
 }
 
 .history-content {
-  max-width: 1000px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
@@ -11,4 +11,8 @@
   float: right;
   width: 420px;
   margin: 0 0 20px 32px;
+}
+
+.history-content p:not(:last-child) {
+  margin-bottom: var(--space-md);
 }

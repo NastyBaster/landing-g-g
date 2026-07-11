@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,17 @@
     <header>
       <nav>
         <a href="#hero" class="logo">G & G</a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Відкрити або закрити меню"
+        />
+        <label class="burger" for="nav-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
         <ul>
           <li><a href="#hero">Про гурт</a></li>
@@ -35,7 +46,7 @@
           Наші концерти - це завжди контакт з залом, драйв і емоції. Приєднуйся
           до нас на найближчих виступах і відчуй цей саунд наживо!
         </p>
-        <a href="#schedule" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
+        <a href="tickets.html" class="btn-primary">ЗАМОВИТИ КВИТОК</a>
       </div>
     </section>
     <section id="schedule">
@@ -56,7 +67,7 @@
             25.10.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="#" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -67,7 +78,7 @@
             01.11.2026, 20:00
           </div>
           <div class="schedule-cell action">
-            <a href="#" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -78,7 +89,7 @@
             09.11.2026, 19:30
           </div>
           <div class="schedule-cell action">
-            <a href="#" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
 
@@ -89,7 +100,7 @@
             16.11.2026, 19:00
           </div>
           <div class="schedule-cell action">
-            <a href="#" class="btn-ticket">Замовити квиток</a>
+            <a href="tickets.html" class="btn-ticket">Замовити квиток</a>
           </div>
         </div>
       </div>
@@ -98,14 +109,21 @@
       <h2 class="section-title">Учасники гурту</h2>
 
       <div class="members-container">
-        <input type="radio" name="member" id="close-all" hidden checked />
+        <input
+          type="radio"
+          name="member"
+          id="close-all"
+          class="member-toggle"
+          aria-label="Закрити картку учасника"
+          checked
+        />
 
         <input
           type="radio"
           name="member"
           id="member-1"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Максима"
         />
 
         <label class="member-card" for="member-1">
@@ -130,13 +148,14 @@
         </label>
 
         <label class="modal-backdrop backdrop-1" for="close-all"></label>
+        <label class="modal-close close-1" for="close-all">Закрити ×</label>
 
         <input
           type="radio"
           name="member"
           id="member-2"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Олени"
         />
 
         <label class="member-card" for="member-2">
@@ -161,13 +180,14 @@
         </label>
 
         <label class="modal-backdrop backdrop-2" for="close-all"></label>
+        <label class="modal-close close-2" for="close-all">Закрити ×</label>
 
         <input
           type="radio"
           name="member"
           id="member-3"
           class="member-toggle"
-          hidden
+          aria-label="Відкрити картку Тараса"
         />
 
         <label class="member-card" for="member-3">
@@ -192,6 +212,7 @@
         </label>
 
         <label class="modal-backdrop backdrop-3" for="close-all"></label>
+        <label class="modal-close close-3" for="close-all">Закрити ×</label>
       </div>
     </section>
     <section id="history">
@@ -206,7 +227,6 @@
           переживаннями. Це було місце, де народжувались наші перші пісні, де ми
           вчились грати разом як єдиний організм.
         </p>
-        <br />
         <p>
           За роки нашої діяльності ми виступили на десятках сцен, від невеликих
           клубів до великих фестивалів. Наша музика — це поєднання традиційного
@@ -214,19 +234,17 @@
           Ми не боїмось експериментувати зі звуком, додаючи електронні елементи
           або народні інструменти.
         </p>
-        <br />
         <p>
           Кожен наш виступ — це не просто концерт, а справжня подія, де ми
           ділимося своєю енергією з глядачами та створюємо неповторну атмосферу.
           Ми віримо, що музика має силу об'єднувати людей, створювати спільноти
           та надихати на зміни.
         </p>
-        <br />
         <p>
-          Кожен наш виступ — це не просто концерт, а справжня подія, де ми
-          ділимося своєю енергією з глядачами та створюємо неповторну атмосферу.
-          Ми віримо, що музика має силу об'єднувати людей, створювати спільноти
-          та надихати на зміни.
+          Наш колектив складається з досвідчених музикантів, кожен з яких
+          привносить свій унікальний стиль та бачення. Максим створює неймовірні
+          гітарні рифи, Олена зачаровує своїм вокалом, а Тарас тримає ритм, який
+          змушує серця битися в унісон з музикою.
         </p>
       </div>
     </section>
@@ -235,31 +253,38 @@
       <p class="subtitle">Хочеш замовити виступ або маєш питання? Пиши!</p>
 
       <div class="contacts-content">
-        <form class="contact-form">
+        <form class="contact-form" action="#contacts" method="post">
           <div class="row">
             <div class="field">
-              <label>Ім'я</label>
-              <input type="text" required />
+              <label for="name">Ім'я</label>
+              <input id="name" name="name" type="text" minlength="2" required />
             </div>
 
             <div class="field">
-              <label>Email</label>
-              <input type="email" required />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
             </div>
           </div>
 
           <div class="field">
-            <label>Повідомлення</label>
-            <textarea></textarea>
+            <label for="message">Повідомлення</label>
+            <textarea
+              id="message"
+              name="message"
+              minlength="10"
+              placeholder="Розкажи про свої ідеї..."
+              required
+            ></textarea>
           </div>
 
-          <button>Відправити</button>
+          <button type="submit">Відправити</button>
         </form>
 
         <div class="map">
           <h3>Наше місцезнаходження</h3>
 
           <iframe
+            title="Мапа місцезнаходження гурту"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.7025842408598!2d30.521919474275144!3d50.43355336899159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf02b2b3a94f%3A0x783fe299564db0c2!2s!5e0!3m2!1sen!2sua!4v1783678780415!5m2!1sen!2sua"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -269,15 +294,36 @@
     </section>
     <footer class="footer">
       <div class="footer-info">
-      <p>&copy; 2025 «Грим та Грім». Всі права захищені.</p>
-      <a href="mailto:booking@lotoplay.com">booking@lotoplay.com  ·</a>
-      <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+        <p>&copy; 2025 «Грим та Грім». Всі права захищені.</p>
+        <div class="footer-contacts">
+          <a href="mailto:booking@lotoplay.com">booking@lotoplay.com</a>
+          <span aria-hidden="true">·</span>
+          <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+        </div>
       </div>
 
       <nav class="footer-social">
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">Facebook</a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
       </nav>
     </footer>
   </body>

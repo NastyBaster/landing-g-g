@@ -6,6 +6,7 @@
 @import "history.css";
 @import "contacts.css";
 @import "footer.css";
+@import "tickets.css";
 @import "media.css";
 
 
@@ -16,18 +17,34 @@
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: var(--bg-main);
   color: var(--text-main);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
+img,
+iframe {
+  max-width: 100%;
+}
+
 section {
   padding: var(--section-padding);
+}
+
+.section-title {
+  max-width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {

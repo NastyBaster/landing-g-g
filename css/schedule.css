@@ -4,12 +4,12 @@
 
 .section-title {
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: var(--space-lg);
   text-align: left;
 }
 
 .schedule-container {
-  max-width: 1000px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@
 .schedule-row {
   display: grid;
   grid-template-columns: 2.5fr 1fr 2fr 1.5fr;
-  gap: 20px;
+  gap: var(--space-md);
   align-items: center;
   padding: 15px 25px;
 }
@@ -31,7 +31,7 @@
 .schedule-row {
   background-color: var(--bg-card);
   margin-top: 15px;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   transition: transform var(--transition-speed) var(--transition-func);
 }
 
@@ -42,13 +42,13 @@
 .btn-ticket {
   display: block;
   background-color: var(--color-btn-red);
-  color: #ffffff;
+  color: var(--color-text-main);
   text-decoration: none;
   text-align: center;
-  padding: 10px 16px;
+  padding: 10px var(--space-sm);
   font-size: 14px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   transition: transform var(--transition-speed) var(--transition-func);
 }
 

@@ -1,23 +1,40 @@
 .footer {
-  max-width: 1000px;
+  max-width: var(--container-width);
   margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--space-md);
 }
 
 .footer p,
-.footer .footer-social a {
+.footer .footer-social a,
+.footer-contacts,
+.footer-contacts a {
   color: var(--text-muted);
-  margin: 20px 0;
 }
 
 .footer a {
-  color: aliceblue;
   text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-text-main);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
 }
 
 .footer-social a:not(:last-child)::after {
   content: " · ";
-  color: #888;
+  color: var(--text-muted);
 }

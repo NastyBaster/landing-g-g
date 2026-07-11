@@ -50,3 +50,32 @@
   text-decoration: none;
   border-bottom: 1px solid currentColor;
 }
+
+.success-page {
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  place-items: center;
+  padding: var(--space-xl) var(--space-md);
+  background:
+    linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.94)),
+    url("../img/hero-bg.png") center / cover no-repeat;
+}
+
+.success-card {
+  max-width: 720px;
+  padding: var(--space-lg);
+  text-align: center;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.success-card h1 {
+  margin: var(--space-xs) 0 var(--space-md);
+  font-size: 40px;
+}
+
+.success-text {
+  margin-bottom: var(--space-lg);
+  color: var(--text-muted);
+}

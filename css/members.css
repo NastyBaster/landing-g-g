@@ -24,7 +24,8 @@
 
   background: var(--bg-card);
 
-  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
 
   transition:
     background-color 0.35s ease,
@@ -49,7 +50,7 @@
 }
 
 .member-info {
-  padding: 15px;
+  padding: var(--space-sm);
 }
 
 .member-header {
@@ -107,7 +108,7 @@
 
   background: var(--bg-card);
 
-  border-radius: 14px;
+  border-radius: var(--radius-xl);
 
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
 

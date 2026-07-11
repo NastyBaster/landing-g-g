@@ -1,20 +1,50 @@
 :root {
+  /* Color palette */
+  --color-bg-main: #0a0a0c;
+  --color-bg-section: #121216;
+  --color-bg-card: #18181f;
+  --color-border: #2a2d38;
 
-  --bg-main: #0a0a0c;
-  --bg-section-alt: #121216;
-  --bg-card: #18181f;
+  --color-text-main: #ffffff;
+  --color-text-muted: #b3b3b3;
+  --color-text-soft: #e0e0e0;
 
-  --text-main: #ffffff;
-  --text-muted: #b3b3b3;
-  --color-accent: #ffcc00;
-  --color-btn-red: #e62e5a;
+  --color-accent-yellow: #ffcc00;
+  --color-accent-yellow-hover: #e6b800;
+  --color-accent-red: #e62e5a;
+  --color-accent-red-hover: #ff5d85;
+  --color-accent-blue: #24c8ff;
 
-
+  /* Layout */
+  --container-width: 1000px;
+  --container-width-wide: 1100px;
   --section-padding: 80px 10%;
   --section-padding-mobile: 40px 20px;
 
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 40px;
+  --space-xl: 80px;
+
+  /* Borders and effects */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-pill: 999px;
+
   --transition-speed: 0.3s;
   --transition-func: ease-in-out;
+  --transition-base: 0.3s ease-in-out;
+
+  /* Backward-compatible aliases */
+  --bg-main: var(--color-bg-main);
+  --bg-section-alt: var(--color-bg-section);
+  --bg-card: var(--color-bg-card);
+  --text-main: var(--color-text-main);
+  --text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent-yellow);
+  --color-btn-red: var(--color-accent-red);
 }
-
-

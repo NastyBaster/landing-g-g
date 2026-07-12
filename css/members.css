@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  max-width: 1200px;
+  max-width: var(--container-widths);
   margin: 0 auto;
   position: relative;
 }

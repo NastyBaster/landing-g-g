@@ -24,6 +24,8 @@ JavaScript у першому етапі реалізації не викорис
 .
 ├── index.html
 ├── tickets.html
+├── succcess.html
+├── README.md
 ├── css/
 │   ├── main.css
 │   ├── variables.css

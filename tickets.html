@@ -24,16 +24,16 @@
         <label class="menu-overlay" for="nav-toggle"></label>
         <ul>
           <li>
-            <a href="index.html#hero"><label for="nav-toggle">Про гурт</label></a>
+            <a href="index.html#hero">Про гурт</a>
           </li>
           <li>
-            <a href="index.html#schedule"><label for="nav-toggle">Концерти</label></a>
+            <a href="index.html#schedule">Концерти</a>
           </li>
           <li>
-            <a href="index.html#members"><label for="nav-toggle">Галерея</label></a>
+            <a href="index.html#members">Галерея</a>
           </li>
           <li>
-            <a href="index.html#contacts"><label for="nav-toggle">Контакти</label></a>
+            <a href="index.html#contacts">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -96,5 +96,13 @@
         </form>
       </section>
     </main>
+
+    <script>
+      document.querySelectorAll('header nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+          document.getElementById('nav-toggle').checked = false;
+        });
+      });
+    </script>
   </body>
 </html>

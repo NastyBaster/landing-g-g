@@ -60,10 +60,6 @@
     border-radius: var(--radius-md);
   }
 
-  header li a label {
-    display: block;
-    cursor: pointer;
-  }
 
   .nav-toggle:checked ~ .menu-overlay {
     display: block;
